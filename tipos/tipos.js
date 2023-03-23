@@ -14,3 +14,10 @@ if (possuiHobbies) {
 else {
     console.log('possuihobbies false');
 }
+//tipos explicitos
+let minhaIdade;
+minhaIdade = 27;
+console.log(typeof minhaIdade);
+minhaIdade = 'idade é 27';
+console.log(typeof minhaIdade);
+///

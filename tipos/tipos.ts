@@ -1,15 +1,16 @@
 //string
-let nome = 'Augusto';
+
+let nome:string = 'Augusto';
 console.log(nome)
 
 //nome
 
-let idade = 27
+let idade:number = 27
 idade = 27.5
 console.log(idade)
 
 //boolean 
-let possuiHobbies = true
+let possuiHobbies:boolean = true
 
 if(possuiHobbies){
 console.log('possuihobbies true')
@@ -17,4 +18,15 @@ console.log('possuihobbies true')
     console.log('possuihobbies false')
 
 }
+
+//tipos explicitos
+let minhaIdade: any
+minhaIdade = 27
+console.log(typeof minhaIdade)
+minhaIdade = 'idade é 27'
+console.log(typeof minhaIdade)
+
+
+///
+
 
