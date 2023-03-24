@@ -24,11 +24,8 @@ console.log(typeof minhaIdade);
 minhaIdade = 'idade é 27';
 console.log(typeof minhaIdade);
 ///array
+/* let hobbies = [] = ['Cozinhar', 'Desenhar'];
+ */
 let hobbies = ['Cozinhar', 'Desenhar'];
-let listaHobbies = document.createElement('ul');
-for (let hobby of hobbies) {
-    let item = document.createElement('li');
-    item.textContent = hobby;
-    listaHobbies.appendChild(item);
-}
-document.body.appendChild(listaHobbies);
+console.log(hobbies[0]);
+console.log(typeof hobbies);

@@ -33,15 +33,10 @@ console.log(typeof minhaIdade)
 
 ///array
 
-let hobbies = ['Cozinhar', 'Desenhar'];
+/* let hobbies = [] = ['Cozinhar', 'Desenhar'];
+ */
+let hobbies: any[] = ['Cozinhar', 'Desenhar'];
+console.log(hobbies[0])
+console.log(typeof hobbies)
 
-let listaHobbies = document.createElement('ul');
-
-for (let hobby of hobbies) {
-  let item = document.createElement('li');
-  item.textContent = hobby;
-  listaHobbies.appendChild(item);
-}
-
-document.body.appendChild(listaHobbies);
 
