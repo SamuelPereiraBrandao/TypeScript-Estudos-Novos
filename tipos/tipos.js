@@ -47,3 +47,25 @@ if (autenticado) {
 else {
     console.log('Usuário não autenticado!');
 }
+let ruasImportantes = ['teste', 'teste'];
+console.log(ruasImportantes);
+var DiaDaSemana;
+(function (DiaDaSemana) {
+    DiaDaSemana[DiaDaSemana["Segunda"] = 1] = "Segunda";
+    DiaDaSemana[DiaDaSemana["Terca"] = 2] = "Terca";
+    DiaDaSemana[DiaDaSemana["Quarta"] = 3] = "Quarta";
+    DiaDaSemana[DiaDaSemana["Quinta"] = 4] = "Quinta";
+    DiaDaSemana[DiaDaSemana["Sexta"] = 5] = "Sexta";
+    DiaDaSemana[DiaDaSemana["Sabado"] = 6] = "Sabado";
+    DiaDaSemana[DiaDaSemana["Domingo"] = 7] = "Domingo";
+})(DiaDaSemana || (DiaDaSemana = {}));
+console.log(DiaDaSemana.Terca); // Imprime: 
+var Cor;
+(function (Cor) {
+    Cor[Cor["Cinza"] = 0] = "Cinza";
+    Cor[Cor["Verde"] = 1] = "Verde";
+    Cor[Cor["Azul"] = 2] = "Azul";
+})(Cor || (Cor = {}));
+let minhaCor = Cor.Verde;
+let minhaCor = Cor.Verde;
+console.log(minhaCor);

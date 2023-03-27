@@ -63,4 +63,31 @@ if (autenticado) {
 }
 
 
+let ruasImportantes:[any,any] = ['teste','teste']
 
+console.log(ruasImportantes)
+
+
+enum DiaDaSemana {
+    Segunda = 1,
+    Terca,
+    Quarta,
+    Quinta,
+    Sexta,
+    Sabado,
+    Domingo
+  }
+  
+  console.log(DiaDaSemana.Terca); // Imprime: 
+  
+
+  enum Cor {
+    Cinza,
+    Verde,
+    Azul
+  }
+
+  let minhaCor: Cor = Cor.Verde
+
+let minhaCor: Cor = Cor.Verde
+console.log(minhaCor)
