@@ -67,7 +67,7 @@ let ruasImportantes:[any,any] = ['teste','teste']
 
 console.log(ruasImportantes)
 
-
+//enums
 enum DiaDaSemana {
     Segunda = 1,
     Terca,
@@ -81,13 +81,107 @@ enum DiaDaSemana {
   console.log(DiaDaSemana.Terca); // Imprime: 
   
 
-  enum Cor {
-    Cinza,
-    Verde,
-    Azul
-  }
+enum Cor {
+    Cinza, //0  
+    Verde = 100,  // 1 
+    Azul,    // 2
+    Laranja,
+    Amarelo,
+    Vermelho = 100
 
-  let minhaCor: Cor = Cor.Verde
+}
 
 let minhaCor: Cor = Cor.Verde
 console.log(minhaCor)
+
+
+enum MesesAno {
+    JANEIRO = 1,
+    FEVEREIRO,
+    MARCO,
+    ABRIL,
+    MAIO,
+    JUNHO,
+    JULHO,
+    AGOSTO,
+    SETEMBRO,
+    OUTUBRO,
+    NOVEMBRO,
+    DEZEMBRO
+  }
+  enum DiasMes {
+    DIA_01 = 1,
+    DIA_02,
+    DIA_03,
+    DIA_04,
+    DIA_05,
+    DIA_06,
+    DIA_07,
+    DIA_08,
+    DIA_09,
+    DIA_10,
+    DIA_11,
+    DIA_12,
+    DIA_13,
+    DIA_14,
+    DIA_15,
+    DIA_16,
+    DIA_17,
+    DIA_18,
+    DIA_19,
+    DIA_20,
+    DIA_21,
+    DIA_22,
+    DIA_23,
+    DIA_24,
+    DIA_25,
+    DIA_26,
+    DIA_27,
+    DIA_28,
+    DIA_29,
+    DIA_30,
+    DIA_31
+  }
+
+  const dataTotal = new Date()
+  const pegardia = dataTotal.getDay() 
+  const DiaDeHoje = DiasMes[pegardia]
+
+
+const dataAtual = new Date();
+const mesAtual = dataAtual.getMonth() + 1; // soma 1 porque o método getMonth() retorna um índice de 0 a 11
+const nomeMesAtual = MesesAno[mesAtual];
+
+console.log(`Estamos no mês de ${nomeMesAtual}`);
+console.log(`${dataTotal}`);
+
+
+enum Operation {
+    Add = "+",
+    Subtract = "-",
+    Multiply = "*",
+    Divide = "/"
+  }
+  
+
+
+  namespace Operation {
+    export function calculate(op: Operation, x: number, y: number) {
+      switch (op) {
+        case Operation.Add:
+          return x + y;
+        case Operation.Subtract:
+          return x - y;
+        case Operation.Multiply:
+          return x * y;
+        case Operation.Divide:
+          return x / y;
+        default:
+          throw new Error(`Invalid operation: ${op}`);
+      }
+    }
+  }
+
+
+  console.log(Operation.calculate(Operation.Divide,550,2))
+
