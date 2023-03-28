@@ -172,3 +172,10 @@ function retornaVazio() {
 }
 retornaMeuNome();
 retornaVazio();
+function multiplicar(numA, numB) {
+    return numA * numB;
+}
+console.log(multiplicar(5, 9));
+let calculo;
+calculo = multiplicar;
+console.log(calculo(5, 6));

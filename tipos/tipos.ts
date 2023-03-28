@@ -208,3 +208,15 @@ function retornaVazio():void {
 
 retornaMeuNome()
 retornaVazio()
+
+
+function multiplicar(numA:number,numB:number): number{
+    return numA * numB
+}
+
+console.log(multiplicar(5,9))
+let calculo:(x:number,y:number)=> number
+
+calculo = multiplicar
+console.log(calculo(5,6))
+
