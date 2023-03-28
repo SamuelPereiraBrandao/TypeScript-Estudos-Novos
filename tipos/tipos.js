@@ -154,3 +154,21 @@ var Operation;
     Operation.calculate = calculate;
 })(Operation || (Operation = {}));
 console.log(Operation.calculate(Operation.Divide, 550, 2));
+//any
+let carro = 'BMW';
+console.log(carro);
+carro = {
+    marca: 'BMW',
+    ano: 2023
+};
+console.log(carro);
+var meunome = 'Samuel';
+function retornaMeuNome() {
+    return meunome;
+}
+console.log(retornaMeuNome());
+function retornaVazio() {
+    console.log("Vazio!");
+}
+retornaMeuNome();
+retornaVazio();

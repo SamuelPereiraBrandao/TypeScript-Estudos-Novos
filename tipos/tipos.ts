@@ -185,3 +185,26 @@ enum Operation {
 
   console.log(Operation.calculate(Operation.Divide,550,2))
 
+
+//any
+let carro:any = 'BMW'
+console.log(carro)
+carro = {
+    marca:'BMW',
+    ano: 2023
+}
+console.log(carro)
+
+var meunome = 'Samuel'
+function retornaMeuNome():string{
+    return meunome;
+}
+
+console.log(retornaMeuNome())
+
+function retornaVazio():void {
+    console.log("Vazio!")
+}
+
+retornaMeuNome()
+retornaVazio()
