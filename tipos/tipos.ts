@@ -220,3 +220,17 @@ let calculo:(x:number,y:number)=> number
 calculo = multiplicar
 console.log(calculo(5,6))
 
+function somar(numero1:number,numero2:number){
+    return numero1 + numero2
+}
+
+console.log(somar(5,6))
+
+//objetos 
+
+let usuario: {nome:string,idade:number} = {
+    nome: 'Samuel',
+    idade: 22
+}
+
+console.log(usuario)

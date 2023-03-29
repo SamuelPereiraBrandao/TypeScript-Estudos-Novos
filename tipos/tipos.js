@@ -179,3 +179,13 @@ console.log(multiplicar(5, 9));
 let calculo;
 calculo = multiplicar;
 console.log(calculo(5, 6));
+function somar(numero1, numero2) {
+    return numero1 + numero2;
+}
+console.log(somar(5, 6));
+//objetos 
+let usuario = {
+    nome: 'Samuel',
+    idade: 22
+};
+console.log(usuario);
