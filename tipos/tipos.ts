@@ -235,7 +235,7 @@ let usuario: {nome:string,idade:number} = {
 
 console.log(usuario)
 
-let supervisores: {nome:string}[] = [
+/* let supervisores: {nome:string}[] = [
     {
         nome:'Samuel'
     },
@@ -253,9 +253,31 @@ if(horario <= 8){
 }else {
     var ponto = 'Fora do horario'
 }
-
 console.log(ponto)
+ */
 
-let funcionario : {
-    
+type Funcionario = {
+    supervisores:string[],
+    baterPonto: (horas:number) => string
 }
+
+let funcionario : Funcionario = {
+    supervisores: ['Ana','Fernando'],
+    baterPonto(horario:number):string{
+        if(horario <= 8){
+            return 'Horario certo!'
+        }else {
+            return 'Horario errado!'
+        }
+    }
+}
+
+console.log(funcionario.supervisores)
+console.log(funcionario.baterPonto(8))
+
+
+
+
+let nota = 10;
+
+console.log(`Minha nota: ${nota}!`)

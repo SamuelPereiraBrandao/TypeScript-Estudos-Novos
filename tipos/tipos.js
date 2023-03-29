@@ -189,21 +189,18 @@ let usuario = {
     idade: 22
 };
 console.log(usuario);
-let supervisores = [
-    {
-        nome: 'Samuel'
-    },
-    {
-        nome: 'Jose'
+let funcionario = {
+    supervisores: ['Ana', 'Fernando'],
+    baterPonto(horario) {
+        if (horario <= 8) {
+            return 'Horario certo!';
+        }
+        else {
+            return 'Horario errado!';
+        }
     }
-];
-console.log(supervisores);
-var horario = 9;
-if (horario <= 8) {
-    var ponto = 'No horario!';
-}
-else {
-    var ponto = 'Fora do horario';
-}
-console.log(ponto);
-let funcionario;
+};
+console.log(funcionario.supervisores);
+console.log(funcionario.baterPonto(8));
+let nota = 10;
+console.log(`Minha nota: ${nota}!`);
