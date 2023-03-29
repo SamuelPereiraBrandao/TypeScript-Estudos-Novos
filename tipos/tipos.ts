@@ -234,3 +234,28 @@ let usuario: {nome:string,idade:number} = {
 }
 
 console.log(usuario)
+
+let supervisores: {nome:string}[] = [
+    {
+        nome:'Samuel'
+    },
+    {
+        nome:'Jose'
+    }
+]
+
+console.log(supervisores)
+
+var horario:number = 9
+
+if(horario <= 8){
+     var ponto = 'No horario!'
+}else {
+    var ponto = 'Fora do horario'
+}
+
+console.log(ponto)
+
+let funcionario : {
+    
+}

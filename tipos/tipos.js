@@ -189,3 +189,21 @@ let usuario = {
     idade: 22
 };
 console.log(usuario);
+let supervisores = [
+    {
+        nome: 'Samuel'
+    },
+    {
+        nome: 'Jose'
+    }
+];
+console.log(supervisores);
+var horario = 9;
+if (horario <= 8) {
+    var ponto = 'No horario!';
+}
+else {
+    var ponto = 'Fora do horario';
+}
+console.log(ponto);
+let funcionario;
