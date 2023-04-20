@@ -202,5 +202,18 @@ let funcionario = {
 };
 console.log(funcionario.supervisores);
 console.log(funcionario.baterPonto(8));
+//union types
 let nota = 10;
 console.log(`Minha nota: ${nota}!`);
+nota = 'Oi';
+console.log(`Minha nota: ${nota}!`);
+nota = true;
+console.log(`Minha nota: ${nota}!`);
+let valor = true;
+//checando tipos
+if (typeof valor === 'number') {
+    console.log('é um number!');
+}
+else {
+    console.log('Não é number, mas é: ' + typeof valor);
+}
