@@ -273,7 +273,9 @@ let funcionario: Funcionario = {
 }
 
 console.log(funcionario.supervisores)
+
 console.log(funcionario.baterPonto(8))
+
 
 
 
