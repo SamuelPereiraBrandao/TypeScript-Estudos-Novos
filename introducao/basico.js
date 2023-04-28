@@ -18,3 +18,4 @@ searchInput.addEventListener("input", () => {
         }
     });
 });
+//# sourceMappingURL=basico.js.map

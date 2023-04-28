@@ -217,3 +217,4 @@ if (typeof valor === 'number') {
 else {
     console.log('Não é number, mas é: ' + typeof valor);
 }
+//# sourceMappingURL=tipos.js.map

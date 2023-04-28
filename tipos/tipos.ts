@@ -258,6 +258,7 @@ console.log(ponto)
 
 type Funcionario = {
     supervisores: string[],
+    
     baterPonto: (horas: number) => string
 }
 
